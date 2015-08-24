@@ -2,13 +2,13 @@ package stringProblem;
 
 public class StringMethod {
 	public static String loopMethod(String word, char i) {
-		String newWord = "";
+		StringBuffer newWord = new StringBuffer();
 		for(int k = 0; k < word.length(); k++) {
 			if(word.charAt(k) != i) {
-				newWord += word.charAt(k);
+				newWord.append(word.charAt(k));
 			} else {continue;}
 		}
-		return newWord;
+		return newWord.toString();
 	}
 	
 	public static String stringFunction(String word, char i) {
